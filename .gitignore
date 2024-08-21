@@ -4,3 +4,4 @@ dbt_packages/
 logs/
 seeds/*
 !seeds/seed.py
+dbt_example.duckdb
