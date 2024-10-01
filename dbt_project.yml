@@ -34,10 +34,14 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+    base:
+      +materialized: view
+      schema: base
 
 # Manually assign datatypes to fields that error when running 'dbt seed'
 seeds:
   dbt_example:
+    schema: source
     corporate_body:
       +column_types:
         CORPORATE_BODY_ID: numeric(10,0)

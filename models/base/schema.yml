@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: base__corporate_body
+    description: "A model that clenses data from source and pushes to base"
+    columns:
+      - name: corporate_body_id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: incorporation_number
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: incorporation_date
+        description: "The primary key for this table"
+      - name: action_code_type_id
+        description: "The primary key for this table"
+      - name: action_code_date
+        description: "The primary key for this table"
+      - name: corporate_body_name
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
